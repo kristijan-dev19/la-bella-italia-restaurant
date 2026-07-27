@@ -14,53 +14,68 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Georgia', serif;
 }
 
+
 body{
-    background:#fffaf0;
-    color:#333;
+    background:#f7f1e3;
+    color:#222;
 }
 
 
 /* HEADER */
 
 header{
-    background:#7b1113;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:25px 8%;
+
+background:#111;
+
 }
+
 
 .logo{
-    color:#ffd700;
-    font-size:30px;
-    font-weight:bold;
+
+color:#d4af37;
+font-size:32px;
+font-weight:bold;
+
 }
+
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-weight:bold;
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+
 }
+
 
 nav a:hover{
-    color:#ffd700;
+
+color:#d4af37;
+
 }
 
 
-/* HERO */
+
+/* MAIN IMAGE */
+
 
 .hero{
 
-height:90vh;
+height:85vh;
 
 background:
 linear-gradient(
-rgba(0,0,0,0.5),
-rgba(0,0,0,0.5)
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
 ),
 url("restaurant.jpg");
 
@@ -69,28 +84,39 @@ background-position:center;
 
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
+padding-left:8%;
+
+}
+
+
+.hero-content{
+
 color:white;
+max-width:600px;
 
 }
 
 
 .hero h1{
-    font-size:70px;
-    color:#ffd700;
+
+font-size:75px;
+color:#d4af37;
+
 }
 
 
 .hero p{
-    font-size:24px;
-    margin:20px;
+
+font-size:24px;
+margin:25px 0;
+
 }
 
 
 .button{
 
-background:#7b1113;
+background:#8b0000;
+
 color:white;
 
 padding:15px 35px;
@@ -103,30 +129,56 @@ text-decoration:none;
 
 
 
-/* SECTIONS */
 
-section{
+/* STORY */
 
-padding:70px 10%;
+
+.story{
+
+padding:80px 10%;
+text-align:center;
 
 }
 
 
-h2{
+.story h2{
+
+font-size:45px;
+color:#8b0000;
+
+}
+
+
+.story p{
+
+margin-top:20px;
+font-size:20px;
+
+}
+
+
+
+/* FOOD */
+
+
+.food-section{
+
+padding:70px 8%;
+
+}
+
+
+.food-section h2{
 
 text-align:center;
-font-size:40px;
-color:#7b1113;
-margin-bottom:35px;
+font-size:45px;
+color:#8b0000;
+margin-bottom:40px;
 
 }
 
 
-
-/* MENU */
-
-
-.menu{
+.food-box{
 
 display:flex;
 justify-content:center;
@@ -136,50 +188,42 @@ flex-wrap:wrap;
 }
 
 
-.card{
+.food{
 
 background:white;
-width:300px;
+
+width:320px;
 
 border-radius:20px;
 
 overflow:hidden;
 
-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+box-shadow:0 10px 25px rgba(0,0,0,.2);
 
 }
 
 
-.card img{
+.food img{
 
 width:100%;
-height:220px;
+height:230px;
 object-fit:cover;
 
 }
 
 
-.card h3{
+.food h3{
 
-padding:15px;
-color:#7b1113;
+padding:20px;
 
-}
-
-
-.card p{
-
-padding:15px;
+color:#8b0000;
 
 }
 
 
-.price{
+.food p{
 
-color:#d4af37;
-font-size:25px;
-font-weight:bold;
-padding:15px;
+padding:0 20px 20px;
 
 }
 
@@ -187,7 +231,14 @@ padding:15px;
 
 /* CHEF */
 
+
 .chef{
+
+background:#111;
+
+color:white;
+
+padding:80px 10%;
 
 text-align:center;
 
@@ -196,10 +247,23 @@ text-align:center;
 
 .chef img{
 
-width:300px;
-height:300px;
-object-fit:cover;
+width:250px;
+height:250px;
+
 border-radius:50%;
+
+object-fit:cover;
+
+margin:30px;
+
+}
+
+
+.chef h2{
+
+color:#d4af37;
+
+font-size:45px;
 
 }
 
@@ -210,20 +274,46 @@ border-radius:50%;
 
 .gallery{
 
+padding:80px 8%;
+
+}
+
+
+.gallery h2{
+
+text-align:center;
+
+font-size:45px;
+
+color:#8b0000;
+
+margin-bottom:40px;
+
+}
+
+
+.gallery-grid{
+
 display:flex;
+
 justify-content:center;
+
 gap:20px;
+
 flex-wrap:wrap;
 
 }
 
 
-.gallery img{
+.gallery-grid img{
 
-width:280px;
-height:200px;
+width:300px;
+
+height:220px;
+
 object-fit:cover;
-border-radius:15px;
+
+border-radius:20px;
 
 }
 
@@ -234,8 +324,22 @@ border-radius:15px;
 
 .contact{
 
+background:#8b0000;
+
+color:white;
+
+padding:60px;
+
 text-align:center;
-font-size:20px;
+
+}
+
+
+.contact h2{
+
+font-size:40px;
+
+margin-bottom:20px;
 
 }
 
@@ -243,10 +347,13 @@ font-size:20px;
 
 footer{
 
-background:#7b1113;
+background:#111;
+
 color:white;
-text-align:center;
+
 padding:25px;
+
+text-align:center;
 
 }
 
@@ -254,6 +361,7 @@ padding:25px;
 </style>
 
 </head>
+
 
 
 <body>
@@ -265,151 +373,161 @@ padding:25px;
 La Bella Italia 🇮🇹
 </div>
 
+
 <nav>
 
 <a href="#">Welcome</a>
-<a href="#menu">Specialties</a>
+
+<a href="#food">Cuisine</a>
+
 <a href="#chef">Chef</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Visit Us</a>
+
+<a href="#gallery">Moments</a>
+
+<a href="#contact">Reserve</a>
 
 </nav>
+
 
 </header>
 
 
 
-<div class="hero">
 
-<div>
+<section class="hero">
 
-<h1>Authentic Italian Taste</h1>
+
+<div class="hero-content">
+
+<h1>Italian Taste</h1>
 
 <p>
-Traditional recipes, fresh ingredients and Italian passion.
+Experience authentic Italian cuisine made with passion.
 </p>
 
-<a class="button" href="#menu">
-Discover Menu
+
+<a class="button" href="#food">
+Explore Food
 </a>
 
-</div>
 
 </div>
 
-
-
-<section>
-
-<h2>Our Story</h2>
-
-<p style="text-align:center;font-size:20px;">
-
-La Bella Italia brings the real taste of Italy.
-Enjoy homemade pasta, fresh pizza and unforgettable moments.
-
-</p>
 
 </section>
 
 
 
 
-<section id="menu">
-
-<h2>Specialties</h2>
+<section class="story">
 
 
-<div class="menu">
+<h2>Our Tradition</h2>
 
 
-<div class="card">
+<p>
+A restaurant inspired by Italy, family recipes and unforgettable flavors.
+Fresh ingredients, handmade pasta and original Italian recipes.
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="food-section" id="food">
+
+
+<h2>Signature Dishes</h2>
+
+
+<div class="food-box">
+
+
+
+<div class="food">
 
 <img src="pizza.jpg">
 
-<h3>Italian Pizza</h3>
+<h3>Classic Pizza</h3>
 
 <p>
-Fresh pizza with traditional Italian ingredients.
+Wood oven pizza with fresh Italian ingredients.
 </p>
 
-<div class="price">
-$15
-</div>
-
 </div>
 
 
 
-<div class="card">
+
+<div class="food">
 
 <img src="pasta.jpg">
 
-<h3>Classic Pasta</h3>
+<h3>Fresh Pasta</h3>
 
 <p>
-Homemade pasta with delicious sauces.
+Homemade pasta with traditional sauces.
 </p>
 
-<div class="price">
-$18
-</div>
-
 </div>
 
 
 
-<div class="card">
+
+<div class="food">
 
 <img src="dessert.jpg">
 
 <h3>Italian Dessert</h3>
 
 <p>
-Sweet desserts made by our chefs.
+Sweet desserts prepared by our chefs.
 </p>
 
-<div class="price">
-$10
-</div>
-
 </div>
 
 
+
 </div>
+
 
 </section>
 
 
 
 
-<section id="chef">
 
-<h2>Our Chef</h2>
+<section class="chef" id="chef">
 
-<div class="chef">
+
+<h2>Our Master Chef</h2>
+
 
 <img src="chef.jpg">
 
-<h3>Marco Rossi</h3>
 
 <p>
-Professional Italian chef.
+Chef Marco creates authentic Italian experiences.
 </p>
 
-</div>
 
 </section>
 
 
 
 
-<section id="gallery">
 
-<h2>Gallery</h2>
+<section class="gallery" id="gallery">
 
 
-<div class="gallery">
+<h2>Italian Moments</h2>
+
+
+<div class="gallery-grid">
+
 
 <img src="gallery1.jpg">
 
@@ -417,60 +535,41 @@ Professional Italian chef.
 
 <img src="gallery3.jpg">
 
-</div>
-
-
-</section>
-
-
-
-
-<section>
-
-<h2>Reviews</h2>
-
-<p style="text-align:center;">
-⭐⭐⭐⭐⭐
-</p>
-
-<p style="text-align:center;">
-"The best Italian restaurant experience!"
-</p>
-
-
-</section>
-
-
-
-
-<section id="contact">
-
-<h2>Visit Us</h2>
-
-<div class="contact">
-
-<p>Email: labellaitalia@gmail.com</p>
-
-<p>Open every day: 11AM - 11PM</p>
-
-<br>
-
-<a class="button" href="#">
-Reserve Table
-</a>
 
 </div>
 
+
 </section>
+
+
+
+
+
+<section class="contact" id="contact">
+
+
+<h2>Reserve Your Table</h2>
+
+
+<p>
+Email: labellaitalia@gmail.com
+</p>
+
+
+<p>
+Open daily 11:00 - 23:00
+</p>
+
+
+</section>
+
 
 
 
 
 <footer>
 
-<p>
 © 2026 La Bella Italia Restaurant
-</p>
 
 </footer>
 
