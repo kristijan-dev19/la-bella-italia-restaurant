@@ -11,61 +11,47 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Georgia, serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
-
 
 body{
-background:#faf3e0;
-color:#222;
+    background:#fffaf0;
+    color:#333;
 }
 
 
-/* TOP BAR */
+/* HEADER */
 
 header{
-
-background:#3b0d0d;
-padding:25px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
+    background:#7b1113;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-
 
 .logo{
-
-color:#d4af37;
-font-size:30px;
-font-weight:bold;
-
+    color:#ffd700;
+    font-size:30px;
+    font-weight:bold;
 }
-
 
 nav a{
-
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:18px;
-
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
 }
 
-
 nav a:hover{
-
-color:#d4af37;
-
+    color:#ffd700;
 }
 
 
 /* HERO */
-
 
 .hero{
 
@@ -73,8 +59,8 @@ height:90vh;
 
 background:
 linear-gradient(
-rgba(0,0,0,.5),
-rgba(0,0,0,.5)
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
 ),
 url("restaurant.jpg");
 
@@ -83,39 +69,28 @@ background-position:center;
 
 display:flex;
 align-items:center;
-padding-left:10%;
-
-}
-
-
-.hero div{
-
-max-width:600px;
+justify-content:center;
+text-align:center;
 color:white;
 
 }
 
 
 .hero h1{
-
-font-size:75px;
-color:#d4af37;
-
+    font-size:70px;
+    color:#ffd700;
 }
 
 
 .hero p{
-
-font-size:25px;
-margin:25px 0;
-
+    font-size:24px;
+    margin:20px;
 }
 
 
+.button{
 
-.btn{
-
-background:#3b0d0d;
+background:#7b1113;
 color:white;
 
 padding:15px 35px;
@@ -124,102 +99,77 @@ border-radius:30px;
 
 text-decoration:none;
 
-display:inline-block;
-
 }
 
 
 
+/* SECTIONS */
 
-/* STORY */
+section{
 
-
-.section{
-
-padding:80px 10%;
+padding:70px 10%;
 
 }
 
 
-.title{
+h2{
 
 text-align:center;
-
-font-size:45px;
-
-color:#3b0d0d;
-
-margin-bottom:40px;
-
-}
-
-
-.text{
-
-text-align:center;
-
-font-size:20px;
-
-line-height:1.8;
+font-size:40px;
+color:#7b1113;
+margin-bottom:35px;
 
 }
 
 
 
-/* SPECIALITIES */
+/* MENU */
 
 
-.special{
+.menu{
 
 display:flex;
-
 justify-content:center;
-
 gap:30px;
-
 flex-wrap:wrap;
 
 }
 
 
-.item{
+.card{
 
 background:white;
-
 width:300px;
 
 border-radius:20px;
 
 overflow:hidden;
 
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
 
 }
 
 
-.item img{
+.card img{
 
 width:100%;
-
 height:220px;
-
 object-fit:cover;
 
 }
 
 
-.item h2{
+.card h3{
 
-padding:20px;
-
-color:#3b0d0d;
+padding:15px;
+color:#7b1113;
 
 }
 
 
-.item p{
+.card p{
 
-padding:0 20px 20px;
+padding:15px;
 
 }
 
@@ -227,9 +177,304 @@ padding:0 20px 20px;
 .price{
 
 color:#d4af37;
-
-font-size:24px;
-
-padding:20px;
+font-size:25px;
+font-weight:bold;
+padding:15px;
 
 }
+
+
+
+/* CHEF */
+
+.chef{
+
+text-align:center;
+
+}
+
+
+.chef img{
+
+width:300px;
+height:300px;
+object-fit:cover;
+border-radius:50%;
+
+}
+
+
+
+/* GALLERY */
+
+
+.gallery{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+
+.gallery img{
+
+width:280px;
+height:200px;
+object-fit:cover;
+border-radius:15px;
+
+}
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+text-align:center;
+font-size:20px;
+
+}
+
+
+
+footer{
+
+background:#7b1113;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+La Bella Italia 🇮🇹
+</div>
+
+<nav>
+
+<a href="#">Welcome</a>
+<a href="#menu">Specialties</a>
+<a href="#chef">Chef</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Visit Us</a>
+
+</nav>
+
+</header>
+
+
+
+<div class="hero">
+
+<div>
+
+<h1>Authentic Italian Taste</h1>
+
+<p>
+Traditional recipes, fresh ingredients and Italian passion.
+</p>
+
+<a class="button" href="#menu">
+Discover Menu
+</a>
+
+</div>
+
+</div>
+
+
+
+<section>
+
+<h2>Our Story</h2>
+
+<p style="text-align:center;font-size:20px;">
+
+La Bella Italia brings the real taste of Italy.
+Enjoy homemade pasta, fresh pizza and unforgettable moments.
+
+</p>
+
+</section>
+
+
+
+
+<section id="menu">
+
+<h2>Specialties</h2>
+
+
+<div class="menu">
+
+
+<div class="card">
+
+<img src="pizza.jpg">
+
+<h3>Italian Pizza</h3>
+
+<p>
+Fresh pizza with traditional Italian ingredients.
+</p>
+
+<div class="price">
+$15
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="pasta.jpg">
+
+<h3>Classic Pasta</h3>
+
+<p>
+Homemade pasta with delicious sauces.
+</p>
+
+<div class="price">
+$18
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="dessert.jpg">
+
+<h3>Italian Dessert</h3>
+
+<p>
+Sweet desserts made by our chefs.
+</p>
+
+<div class="price">
+$10
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="chef">
+
+<h2>Our Chef</h2>
+
+<div class="chef">
+
+<img src="chef.jpg">
+
+<h3>Marco Rossi</h3>
+
+<p>
+Professional Italian chef.
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+
+<div class="gallery">
+
+<img src="gallery1.jpg">
+
+<img src="gallery2.jpg">
+
+<img src="gallery3.jpg">
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Reviews</h2>
+
+<p style="text-align:center;">
+⭐⭐⭐⭐⭐
+</p>
+
+<p style="text-align:center;">
+"The best Italian restaurant experience!"
+</p>
+
+
+</section>
+
+
+
+
+<section id="contact">
+
+<h2>Visit Us</h2>
+
+<div class="contact">
+
+<p>Email: labellaitalia@gmail.com</p>
+
+<p>Open every day: 11AM - 11PM</p>
+
+<br>
+
+<a class="button" href="#">
+Reserve Table
+</a>
+
+</div>
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 La Bella Italia Restaurant
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
